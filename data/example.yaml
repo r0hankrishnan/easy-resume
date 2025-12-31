@@ -1,0 +1,66 @@
+name: Rohan Krishnan
+location: Philadelphia, PA
+email: rohan.krish20+jobs@gmail.com
+linkedin: linkedin.com/in/rohankrish/
+
+education:
+- degree: M.S.E. in Data Science
+  institution: University of Pennsylvania
+  location: Philadelphia, PA
+  dates: 2025
+  bullets:
+  - "Coursework: Big Data Analytics"
+- degree: Hons. B.S. in Economics & B.S. in Business Information Systems
+  institution: University of Pittsburgh
+  location: Pittsburgh, PA
+  dates: 2024
+  bullets:
+  - "Minor/Certifate: Applied Statistics, Business Analytics"
+  - "Honors/Awards: Summa Cum Laude, $4000 Honors Fellowship, $3000 DSG Analytics Case Competition Winner, $40000 Merit Scholarship"
+
+
+experience:
+- role: CEO
+  company: Microsoft
+  location: Mechanicsburg, PA
+  dates: July 2025 - November 2025
+  bullets:
+  - This a bullet
+  - This a second, longer bullet that is longer and longer bullets are cool
+- role: CFO
+  company: Google
+  location: Mars City, Mars
+  dates: July 2024 - November 2024
+  bullets:
+    - This a bullet
+    - This a second, longer bullet that is longer and longer bullets are cool
+
+projects:
+- project:
+  location:
+  dates:
+  bullets:
+  - This is a bullet
+  - This is a second, longer bullet that is longer and longer bullets are cool
+- project:
+  location:
+  dates:
+  bullets:
+  - This a bullet
+  - This a second, longer bullet that is longer and longer bullets are cool 
+
+leadership:
+- role:
+  organization:
+  location:
+  dates:
+  bullets:
+  - This is a bullet
+  - This is a second, longer bullet that is longer and longer bullets are cool
+- role: 
+  organization:
+  location:
+  dates:
+  bullets:
+  - This is a bullet
+  - This is a second, longer bullet that is longer and longer bullets are cool

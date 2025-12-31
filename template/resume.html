@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name }} - Resume</title>
+    <link rel = "stylesheet" href = "../styles/style.css">
+</head>
+<body>
+    <div class = "header">
+        <h1>{{ name }}</h1>
+        <p class="contact">
+            {{ location }} |
+            {{ email }} |
+            {{ linkedin }}
+        </p>
+    </div>
+
+    {% if education %}
+    <h1>EDUCATION</h1>
+    <hr>
+
+    {% for ed in education %}
+    <div class = "container">
+        <span class="left">
+
+            <strong>{{ ed.degree }}</strong>, <strong>{{ ed.institution }}</strong>, {{ ed.location }}
+        
+        </span>
+        <span class="right">{{ ed.dates }}</span>
+    </div>
+    <ul>
+        {% for bullet in ed.bullets %}
+        <li> {{ bullet }} </li>
+        {% endfor %}
+    </ul>
+    
+    {% endfor %}
+    {% endif %}
+
+    {% if experience %}
+    <h1>EXPERIENCE</h1>
+    <hr>
+
+    {% for job in experience %}
+    <div class = "container">
+        <span class="left">
+
+            <strong>{{ job.role }}</strong>, <strong>{{ job.company }}</strong>, {{ job.location }}
+        
+        </span>
+        <span class="right">{{ job.dates }}</span>
+    </div>
+    <ul>
+        {% for bullet in job.bullets %}
+        <li> {{ bullet }} </li>
+        {% endfor %}
+    </ul>
+    
+    {% endfor %}
+    {% endif %}
+
+    {% if projects %}
+    <h1>PROJECTS</h1>
+    <hr>
+
+    {% for project in projects %}
+    <div class = "container">
+        <span class="left">
+
+            <strong>{{ project.name }}</strong>, {{ project.location }}
+        
+        </span>
+        <span class="right">{{ project.dates }}</span>
+    </div>
+
+    <ul>
+        {% for bullet in project.bullets %}
+        <li> {{ bullet }} </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+    {% endif %}
+
+    {% if skills %}
+    
+    {% endif %}
+
+
+</body>
+</html>
+
