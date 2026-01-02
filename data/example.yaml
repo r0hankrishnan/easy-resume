@@ -1,66 +1,67 @@
-name: Rohan Krishnan
-location: Philadelphia, PA
-email: rohan.krish20+jobs@gmail.com
-linkedin: linkedin.com/in/rohankrish/
+name: Jordan Lee
+email: jordan.lee@example.com
+phone: 555-321-7789
+location: Chicago, IL
+github: github.com/jordanlee
+linkedin: linkedin.com/in/jordanlee/
 
 education:
-- degree: M.S.E. in Data Science
-  institution: University of Pennsylvania
-  location: Philadelphia, PA
-  dates: 2025
+- degree: M.S. in Computer Science
+  institution: Midwest Technical University
+  location: Chicago, IL
+  dates: 2026
   bullets:
-  - "Coursework: Big Data Analytics"
-- degree: Hons. B.S. in Economics & B.S. in Business Information Systems
-  institution: University of Pittsburgh
-  location: Pittsburgh, PA
+  - "Coursework: Machine Learning, Databases, Distributed Systems"
+- degree: B.S. in Computer Engineering
+  institution: Lakeshore State University
+  location: Evanston, IL
   dates: 2024
   bullets:
-  - "Minor/Certifate: Applied Statistics, Business Analytics"
-  - "Honors/Awards: Summa Cum Laude, $4000 Honors Fellowship, $3000 DSG Analytics Case Competition Winner, $40000 Merit Scholarship"
-
+  - "Minor/Certificate: Applied Mathematics"
+  - "Honors/Awards: Dean’s List, Engineering Scholarship Recipient"
 
 experience:
-- role: CEO
-  company: Microsoft
-  location: Mechanicsburg, PA
-  dates: July 2025 - November 2025
+- role: Software Engineer
+  company: Blue Horizon Technologies
+  location: Chicago, IL
+  dates: July 2024 - Present
   bullets:
-  - This a bullet
-  - This a second, longer bullet that is longer and longer bullets are cool
-- role: CFO
-  company: Google
-  location: Mars City, Mars
-  dates: July 2024 - November 2024
+  - Designed and implemented backend services in Python and Java to support internal analytics tools.
+  - Collaborated with cross-functional teams to improve system reliability and reduce processing latency.
+- role: Technology Intern
+  company: Northstar Consulting Group
+  location: Remote
+  dates: May 2023 - August 2023
   bullets:
-    - This a bullet
-    - This a second, longer bullet that is longer and longer bullets are cool
+    - Assisted in developing data pipelines and validating data quality for client reporting solutions.
+    - Produced technical documentation and presentations for internal stakeholders.
 
 projects:
-- project:
-  location:
-  dates:
+- project: Inventory Optimization System
+  location: Remote
+  dates: January 2025 - April 2025
   bullets:
-  - This is a bullet
-  - This is a second, longer bullet that is longer and longer bullets are cool
-- project:
-  location:
-  dates:
+  - Built a forecasting model to predict inventory demand using historical sales data.
+  - Created visual dashboards to communicate model results and operational insights.
+- project: Natural Language Search Tool
+  location: Remote
+  dates: June 2024 - September 2024
   bullets:
-  - This a bullet
-  - This a second, longer bullet that is longer and longer bullets are cool 
+  - Developed a semantic search prototype using text embeddings and cosine similarity.
+  - Demonstrated improved query relevance compared to keyword-based search approaches.
 
 leadership:
-- role:
-  organization:
-  location:
-  dates:
+- role: Team Lead
+  organization: University Coding Collective
+  location: Chicago, IL
+  dates: September 2023 - May 2024
   bullets:
-  - This is a bullet
-  - This is a second, longer bullet that is longer and longer bullets are cool
-- role: 
-  organization:
-  location:
-  dates:
+  - Led weekly technical workshops focused on software development best practices.
+  - Mentored junior members on project planning and version control.
+- role: Treasurer
+  organization: Student Engineering Association
+  location: Evanston, IL
+  dates: August 2022 - May 2023
   bullets:
-  - This is a bullet
-  - This is a second, longer bullet that is longer and longer bullets are cool
+  - Managed organizational budget and tracked expenses for events and activities.
+  - Assisted with planning and coordination of academic and networking events.

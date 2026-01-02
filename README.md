@@ -1,3 +1,5 @@
 # Easy Resume
 
 This tool allows you to write out your resume using YAML and then use python to create a properly formatted pdf of your resume. The goal of this project is to allow for rapid editing and tailoring of resumes without having to deal with Word formatting.
+
+Currently, the script uses `weasyprint` to render the HTML as a PDF document. Unfortunately, it doesn't appear to be able to read some of the CSS styling and leaves some odd artifacts in the PDF. I checked the outputted PDF with online ATS scanners and they are all able to read the resume properly but the actual appearance of the resume isn't quite ideal. To fix this, I'll be working on implementing a chromium-based rendering and printing workflow using `playwright`. While this solution makes the overall script much heavier, it does ensure consistent rendering which is important for professional resumes.

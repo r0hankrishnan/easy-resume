@@ -1,0 +1,84 @@
+/* Page setup (critical for Word-like feel) */
+@page {
+  size: letter;
+  margin-top: 0.3in;
+  margin-right: 0.50in;
+  margin-bottom: 0.50in;
+  margin-left: 0.50in;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10pt;
+  line-height: 1.0;
+  color: #000;
+  background: #fff;
+  margin: 0;
+}
+
+/* Container to mimic document page */
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+/* Name header */
+.header-name {
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4pt;
+}
+
+/* Contact line */
+.header-contact {
+  text-align: center;
+  margin-bottom: 10pt;
+}
+
+/* Section titles (EDUCATION, WORK EXPERIENCE, etc.) */
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10pt;
+  margin-bottom: 4pt;
+}
+
+/* Entry row with left title + right date/location */
+.entry-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+/* Left side (role, company, school) */
+/* .entry-left {
+  font-weight: bold;
+} */
+
+/* Right side (dates, location) */
+.entry-right {
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Subtext (degree, subtitle lines) */
+.subtext {
+  margin-top: 2pt;
+}
+
+/* Bullet list (Word-style) */
+ul {
+  margin: 4pt 0 6pt 14pt;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 2pt;
+}
+
+/* Prevent extra spacing from browsers */
+p {
+  margin: 0;
+}

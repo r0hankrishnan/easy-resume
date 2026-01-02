@@ -1,6 +1,8 @@
+import sys
 import yaml
 from pathlib import Path
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+from weasyprint import HTML, CSS
 
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data" 
@@ -13,24 +15,36 @@ OUTPUT_DIR.mkdir(exist_ok = True)
 print("Initializing renderer...")
 
 # Load YAML resume
-filename = "example.yaml"
-with open(DATA_DIR / filename, "r") as f:
-    content = yaml.safe_load(f)
-    
-print(content)
-print(content["education"])
-print(content["experience"])
+filename = input("Enter file name (without extension): ").strip()
+filename_ext = filename + ".yaml"
 
-    
+print("Reading file...")
+
+try:
+    with open(DATA_DIR / filename_ext, "r") as f:
+        content = yaml.safe_load(f)
+except Exception as e:
+    print(f"Something went wrong. Error msg: {e}")
+    sys.exit(1)
+
 # Get HTML template
-environment = Environment(loader = FileSystemLoader(TEMPLATES_DIR))
+environment = Environment(loader = FileSystemLoader(TEMPLATES_DIR), 
+                          autoescape=select_autoescape(["html", "xml"]))                         
 template = environment.get_template("resume.html")
 
-print(template)
+output_HTML = OUTPUT_DIR / (filename + "_easyresume.html")
+output_PDF = OUTPUT_DIR / (filename + "_easyresume.pdf")
 
-print(template.render(content))
+output_HTML.write_text(
+    template.render(content),
+    encoding="utf-8"
+)
 
-# Output HTML
-output_filename = "output.html"
-with open(OUTPUT_DIR / output_filename, "w") as file:
-    file.write(template.render(content))
+# Convert to PDF (critical: base_url)
+HTML(
+    filename=str(output_HTML),
+    base_url=str(BASE_DIR)
+).write_pdf(output_PDF,
+            stylesheets = [CSS(filename = str(STYLES_DIR / "style.css"))])
+
+print(f"Resume created at `{output_PDF}`!")
