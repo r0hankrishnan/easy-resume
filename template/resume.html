@@ -14,6 +14,13 @@
             {{ github }} | {{ linkedin }}
         </div>
 
+        {% if summary %}
+        <div class="section-title">SUMMARY</div>
+        <hr>
+
+        <p>{{ text }}</p>
+        {% endif %}
+
         {% if education %}
         <div class="section-title">EDUCATION</div>
         <hr>
@@ -81,6 +88,15 @@
         {% endif %}
 
         {% if skills %}
+        <div class="section-title">PROJECTS</div>
+        <hr>
+
+        {% for skill in skills %}
+        <ul>
+            {% for bullet in skill.bullets %}
+            <li>{{ bullet }}</li>
+            {% endfor %}
+        </ul>
         {% endif %}
     </div>
 </body>
