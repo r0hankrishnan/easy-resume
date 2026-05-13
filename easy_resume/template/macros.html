@@ -1,0 +1,51 @@
+{% macro render_education(entry) %}
+<div class="entry-row">
+    <div class="entry-left">
+        <strong>{{ entry.degree }}</strong>, <strong>{{ entry.institution }}</strong>, {{ entry.location }}
+    </div>
+    <div class="entry-right">{{ entry.dates }}</div>
+</div>
+{% if entry.bullets %}
+<ul>
+    {% for bullet in entry.bullets %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endmacro %}
+
+{% macro render_experience(entry) %}
+<div class="entry-row">
+    <div class="entry-left">
+        <strong>{{ entry.role }}</strong>, <strong>{{ entry.company }}</strong>, {{ entry.location }}
+    </div>
+    <div class="entry-right">{{ entry.dates }}</div>
+</div>
+{% if entry.bullets %}
+<ul>
+    {% for bullet in entry.bullets %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endmacro %}
+
+{% macro render_projects(entry) %}
+<div class="entry-row">
+    <div class="entry-left">
+        <strong>{{ entry.name }}</strong>
+    </div>
+    <div class="entry-right">{{ entry.dates }}</div>
+</div>
+{% if entry.bullets %}
+<ul>
+    {% for bullet in entry.bullets %}
+    <li>{{ bullet }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endmacro %}
+
+{% macro render_skills_inline(entry) %}
+<p>{{ entry.skills | join(", ") }}</p>
+{% endmacro %}

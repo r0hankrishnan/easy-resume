@@ -1,67 +1,76 @@
-name: Jordan Lee
-email: jordan.lee@example.com
-phone: 555-321-7789
-location: Chicago, IL
-github: github.com/jordanlee
-linkedin: linkedin.com/in/jordanlee/
+meta:
+  theme: default
+  section_order:
+    - education
+    - experience
+    - projects
+    - skills_inline
 
-education:
-- degree: M.S. in Computer Science
-  institution: Midwest Technical University
-  location: Chicago, IL
-  dates: 2026
-  bullets:
-  - "Coursework: Machine Learning, Databases, Distributed Systems"
-- degree: B.S. in Computer Engineering
-  institution: Lakeshore State University
-  location: Evanston, IL
-  dates: 2024
-  bullets:
-  - "Minor/Certificate: Applied Mathematics"
-  - "Honors/Awards: Dean’s List, Engineering Scholarship Recipient"
+header:
+  name: Clark Kent
+  email: clark.kent@dailyplanet.com
+  phone: "555-938-2355"
+  location: Metropolis, NY
+  github: github.com/clarkkent
+  linkedin: linkedin.com/in/clarkkent
 
-experience:
-- role: Software Engineer
-  company: Blue Horizon Technologies
-  location: Chicago, IL
-  dates: July 2024 - Present
-  bullets:
-  - Designed and implemented backend services in Python and Java to support internal analytics tools.
-  - Collaborated with cross-functional teams to improve system reliability and reduce processing latency.
-- role: Technology Intern
-  company: Northstar Consulting Group
-  location: Remote
-  dates: May 2023 - August 2023
-  bullets:
-    - Assisted in developing data pipelines and validating data quality for client reporting solutions.
-    - Produced technical documentation and presentations for internal stakeholders.
+sections:
+  - type: education
+    title: null
+    entries:
+      - degree: B.A. in Journalism
+        institution: Metropolis University
+        location: Metropolis, NY
+        dates: 1989 - 1993
+        bullets:
+          - "Coursework: Investigative Reporting, Media Ethics, Political Science"
+          - "Honors: Valedictorian, Editor-in-Chief of The Metropolis Courier"
+      - degree: High School Diploma
+        institution: Smallville High School
+        location: Smallville, KS
+        dates: 1985 - 1989
+        bullets:
+          - "Awards: Most Likely to Save the Day, Star Quarterback"
 
-projects:
-- project: Inventory Optimization System
-  location: Remote
-  dates: January 2025 - April 2025
-  bullets:
-  - Built a forecasting model to predict inventory demand using historical sales data.
-  - Created visual dashboards to communicate model results and operational insights.
-- project: Natural Language Search Tool
-  location: Remote
-  dates: June 2024 - September 2024
-  bullets:
-  - Developed a semantic search prototype using text embeddings and cosine similarity.
-  - Demonstrated improved query relevance compared to keyword-based search approaches.
+  - type: experience
+    title: null
+    entries:
+      - role: Senior Investigative Reporter
+        company: The Daily Planet
+        location: Metropolis, NY
+        dates: Jan 1994 - Present
+        bullets:
+          - Broke over 200 front-page stories on organized crime, government corruption, and alien phenomena with a 100% accuracy rate.
+          - Frequently first on scene for major incidents despite never appearing to leave the office.
+          - Maintains exclusive sourcing relationship with Superman, the only journalist to do so.
+      - role: Junior Reporter
+        company: The Daily Planet
+        location: Metropolis, NY
+        dates: Jun 1993 - Dec 1993
+        bullets:
+          - Covered local Metropolis beat including city hall, crime, and community events.
+          - Nominated for a Kerth Award in first six months, an unprecedented achievement for a junior staffer.
 
-leadership:
-- role: Team Lead
-  organization: University Coding Collective
-  location: Chicago, IL
-  dates: September 2023 - May 2024
-  bullets:
-  - Led weekly technical workshops focused on software development best practices.
-  - Mentored junior members on project planning and version control.
-- role: Treasurer
-  organization: Student Engineering Association
-  location: Evanston, IL
-  dates: August 2022 - May 2023
-  bullets:
-  - Managed organizational budget and tracked expenses for events and activities.
-  - Assisted with planning and coordination of academic and networking events.
+  - type: projects
+    title: null
+    entries:
+      - name: "LexCorp Exposé, year-long investigation into illegal weapons contracting and financial fraud"
+        dates: Mar 2002 - Apr 2003
+        bullets:
+          - Obtained and verified 4,000+ pages of classified internal documents through undisclosed sources.
+          - Story led to federal indictment of three LexCorp executives and $2B in recovered public funds.
+      - name: "Alien Integration Index, data analysis of extraterrestrial population trends in urban centers"
+        dates: Sep 2020 - Dec 2020
+        bullets:
+          - Scraped and merged census data with anomalous incident reports across 15 major US cities.
+          - Published findings prompted congressional subcommittee hearing on ET civil rights legislation.
+
+  - type: skills_inline
+    title: null
+    entries:
+      - skills:
+          - Investigative Journalism
+          - Shorthand Typing (220 WPM)
+          - Fluent Kryptonian
+          - Excel
+          - "Disguise (Glasses)"

@@ -1,0 +1,43 @@
+{% from "macros.html" import render_education, render_experience, render_projects, render_skills_inline %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ header.name }} - Resume</title>
+    <link rel="stylesheet" href="{{ stylesheet_path }}">
+</head>
+<body>
+<div class="page">
+
+    <div class="header-name">{{ header.name }}</div>
+    <div class="header-contact">
+        {% set contact_parts = [] %}
+        {% if header.email %}{% set _ = contact_parts.append(header.email) %}{% endif %}
+        {% if header.phone %}{% set _ = contact_parts.append(header.phone) %}{% endif %}
+        {% if header.location %}{% set _ = contact_parts.append(header.location) %}{% endif %}
+        {% if header.github %}{% set _ = contact_parts.append(header.github) %}{% endif %}
+        {% if header.linkedin %}{% set _ = contact_parts.append(header.linkedin) %}{% endif %}
+        {{ contact_parts | join(" | ") }}
+    </div>
+
+    {% for section in sections %}
+    <div class="section-title">{{ section.title }}</div>
+    <hr>
+    {% for entry in section.entries %}
+        {% if section.type == "education" %}
+            {{ render_education(entry) }}
+        {% elif section.type == "experience" %}
+            {{ render_experience(entry) }}
+        {% elif section.type == "projects" %}
+            {{ render_projects(entry) }}
+        {% elif section.type == "skills_inline" %}
+            {{ render_skills_inline(entry) }}
+        {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+</div>
+</body>
+</html>
