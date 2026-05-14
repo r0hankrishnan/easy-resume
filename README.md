@@ -1,6 +1,6 @@
 # easy-resume
 
-> QUICK NOTE: I made this befoer finding RenderCV, which is a way more mature and functional version of this project. If you are looking for a robust and extensible way to generate PDF resumes from YAML, consider checking them out. This repository will likely not be getting any more theme or formatting updates.
+> QUICK NOTE: I made this before finding RenderCV, which is a way more mature and functional version of this project. If you are looking for a robust and extensible way to generate PDF resumes from YAML, consider checking them out. This repository will likely not be getting any more theme or formatting updates.
 
 Generate a formatted resume PDF from a YAML file.
 
